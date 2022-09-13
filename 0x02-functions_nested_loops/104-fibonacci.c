@@ -43,4 +43,18 @@ int main(void)
 		{
 			printf("%lu", f1);
 
-			tmp = f
+			tmp = (f1 + f2) % mx;
+			tmpo = f10 + f20 + (f1 + f2) / mx;
+			f1 = f2;
+			f10 = f20;
+			f2 = tmp;
+			f20 = tmpo;
+
+			if (i != 98)
+				printf(", ");
+			else
+				printf("\n");
+			i++;
+		}
+		return (0);
+	}
