@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * print_alphabet_x10 - Entry point 
- * Description: a function that prints alphabet x10 times 
+ * print_alphabet_x10 - Entry point
+ * Description: a function that prints alphabet x10 times
  * in lowercase followed by a newline
  * Return: Always 0 (success)
  */
