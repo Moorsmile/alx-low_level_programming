@@ -1,12 +1,13 @@
 #include "main.h"
 /**
- * jack bauer - prints every minute of the day of Jack bauer
+ * jack_bauer - prints every minute of the day of Jack bauer
  * Description: a function that prints every minute of the day
  * Return: Always 0
  */
 void jack_bauer(void)
 {
 	int hours_zero, hours_one, minutes_zero, minutes_one, hours_max;
+
 	hours_max = 58;
 	hours_zero = '0';
 	while (hours_zero < '3')
