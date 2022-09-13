@@ -2,7 +2,7 @@
 /**
  * print_sign - Entry point
  * Description: function that prints the sign of a number
- * n: carrier variable
+ * @n: carrier variable
  * Return: 1 if n>0, 0 if n==0, -1 if n<0
  */
 int print_sign(int n)

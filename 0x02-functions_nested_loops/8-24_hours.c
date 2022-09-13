@@ -4,7 +4,7 @@
  * Description: a function that prints every minute of the day
  * Return: Always 0
  */
-void jack bauer(void)
+void jack_bauer(void)
 {
 	int hours_zero, hours_one, minutes_zero, minutes_one, hours_max;
 	hours_max = 58;

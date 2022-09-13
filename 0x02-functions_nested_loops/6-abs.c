@@ -2,7 +2,7 @@
 /**
  * _abs - Entry point
  * Description: function that computes the value of an integer
- * n: an integer
+ * @n: an integer
  * Return: int
  */
 int _abs(int n)
