@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main.h"
+#include <math.h>
 
 /**
  * main - prints the largest prime factorial of 612852475143
