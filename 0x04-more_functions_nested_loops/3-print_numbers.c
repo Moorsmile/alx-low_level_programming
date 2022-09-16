@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_numbers - prints numbers from 0 to 9 without using standard functions
+ * print_numbers - prints numbers from 0 to 9
  *
  * Returns: void
  */
@@ -13,7 +13,7 @@ void print_numbers(void)
 	while (c < 58)
 	{
 		_putchar(c);
-		c++
+		c++;
 	}
 	_putchar('\n');
 }

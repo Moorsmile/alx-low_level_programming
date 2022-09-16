@@ -1,6 +1,7 @@
 #include "main.h"
 
-/** print_diagonal - prints diagonal line using "\" character of n length
+/** 
+ * print_diagonal - prints diagonal line
  * @n: length of the line
  *
  * Return: void
