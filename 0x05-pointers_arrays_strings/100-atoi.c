@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _atoi - function that converts the first set of digits in a string to an integer
+ * _atoi - function that converts the first set of digits
  * @s: string to be converted
  * Return: integer containing the converted number
  */
