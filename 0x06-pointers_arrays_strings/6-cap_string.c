@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * _cap_string - function that capitalizes all words of a string
+ * cap_string - function that capitalizes all words of a string
  * @s: string
  * Return: pointer to dest
  */
 
-char *_cap_string(char *s)
+char *cap_string(char *s)
 {
 	int count = 0, i;
 	int sep_words[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};

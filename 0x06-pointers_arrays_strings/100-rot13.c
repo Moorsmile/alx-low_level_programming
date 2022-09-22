@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * _rot13 - function that encodes a string using rot13
+ * rot13 - function that encodes a string using rot13
  * @s: string
  * Return: pointer to dest
  */
 
-char *_rot13(char *s)
+char *rot13(char *s)
 {
 	int count = 0, i;
 	char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -26,5 +26,3 @@ char *_rot13(char *s)
 	}
 	return (s);
 }
-
-
