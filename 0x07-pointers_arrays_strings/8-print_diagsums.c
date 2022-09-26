@@ -3,28 +3,24 @@
 
 /**
  * print_diagsums - prints the sum of the two diagonals
- * @a: 2-dimensional array
- * @size: size of matrix
+ * @a: pointer to start of matrix
+ * @size: width of matrix
  * Return: void
  */
 
 void print_diagsums(int *a, int size)
 {
-	int i = 0, len, diag_sum = 0;
+	int i, j, p, l = 0, r = 0;
 
-	len = size * size;
-	while (i < len)
+	for (i = 0; i < size; i++)
 	{
-		disg_sum += a[i];
-		i += size + 1;
+		p = (i * size) + i;
+		l += *(a +p);
 	}
-	printf("%d, ", diag_sum);
-	i = size -1;
-	diag_sum = 0;
-	while (i < len - size + 1)
+	for (j = 0; j < size; j++)
 	{
-		diag_sum += a[i];
-		i += size - 1;
+		p = (j *size) + (size - 1 - j);
+		r += *(a + p);
 	}
-	printf("%d\n", diag_sum);
+	printf("%i, %i\n", l, r);
 }

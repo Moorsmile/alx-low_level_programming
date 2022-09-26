@@ -3,8 +3,8 @@
 /**
  * _strspn - gets the length of a prefix substring
  * @s: string
- * @accept: pattern to match
- * Return: Always 0
+ * @accept: string to check against
+ * Return: number of bytes of s in accept
  */
 
 unsigned int _strspn(char *s, char *accept)
@@ -14,13 +14,12 @@ unsigned int _strspn(char *s, char *accept)
 	for (i = 0; s[i]; i++)
 	{	
 		for (j = 0; accept[j]; j++)
-		{	
+		{
 			if (s[i] == accept[j])
 				break;
-			}
 		}
 		if (!accept[j])
 			break;
-	}	
+	}
 	return (i);
-}	
+}

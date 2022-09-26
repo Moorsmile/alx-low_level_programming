@@ -4,7 +4,7 @@
  * _strstr - locates a substring
  * @haystack: string
  * @needle: substring to match
- * Return: pointer to beginning of needle in haystack or null if 
+ * Return: pointer to beginning of needle in haystack or null if
  * no match
  */
 
@@ -30,5 +30,5 @@ char *_strstr(char *haystack, char *needle)
 			return (haystack + i);
 	}
 	return (0);
-}	
+}
 
