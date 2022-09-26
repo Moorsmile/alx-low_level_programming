@@ -4,31 +4,31 @@
  * _strstr - locates a substring
  * @haystack: string
  * @needle: substring to match
- * Return: NULL
+ * Return: pointer to beginning of needle in haystack or null if 
+ * no match
  */
 
 char *_strstr(char *haystack, char *needle)
 {
-	int i, j, match;
+	unsigned int i = 0, j = 0;
 
-	if (*needle == '\0')
-		return (haystack);
-	for (i = 0; haystack[i] != '\0'; i++)
+	while (haystack[i])
 	{
-		if (haystack[i] == *needle)
+		while (needle[j] && (haystack[i] == needle[0]))
 		{
-			for (j = i; needle[j] != '\0'; j++)
-			{
-				if (needle[j] != haystack[i + j])
-				{
-					match = 0;
-					break;
-				}
-				match = 1;
-			}
-			if (match)
-				return (haystack + i);
+			if (haystack[i + j] == needle[j])
+				j++;
+			else
+				break;
 		}
+		if (needle[j])
+		{
+			i++;
+			j = 0;
+		}
+		else
+			return (haystack + i);
 	}
-	return (NULL);
-}
+	return (0);
+}	
+
