@@ -10,24 +10,26 @@ int _sqrt_recursion(int n)
 {
 	int square = 2;
 
-	if (n == 1 || n == 0)
+	if (n < 0)
+		return (-1);
+	else if (n == 1 || n == 0)
 		return (n);
-	return (_sqrt(n, square));
+	return (is_sqrt(n, square));
 }
 
 /**
- * _sqrt - checks the square root if it is correct
+ * is_sqrt - checks the square root if it is correct
  * @n: test number
  * @square: test number
  * Return: int
  */
 
-int _sqrt(int n, int square)
+int is_sqrt(int n, int square)
 {
 	if (square * square == n)
 		return (square);
 	else if (square * square < n)
-		return (_sqrt(n, square + 1));
+		return (is_sqrt(n, square + 1));
 	else if (square * square > n)
 		return (-1);
 	return (-1);
