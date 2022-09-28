@@ -3,28 +3,32 @@
 /**
  * _sqrt_recursion - natural square root of a number
  * @n: number
- * Return: square root of the number
+ * Return: int
  */
 
 int _sqrt_recursion(int n)
 {
+	int square = 2;
+
 	if (n == 1 || n == 0)
 		return (n);
-	return (_sqrt_recursion(0, n));
+	return (_sqrt(n, square));
 }
 
 /**
- * _sqrt - returns the square root of a number
+ * _sqrt - checks the square root if it is correct
  * @n: test number
- * @x: squared number
- * Return: square root of n
+ * @square: test number
+ * Return: int
  */
 
-int _sqrt(int n, int x)
+int _sqrt(int n, int square)
 {
-	if (n > x / 2)
+	if (square * square == n)
+		return (square);
+	else if (square * square < n)
+		return (_sqrt(n, square + 1));
+	else if (square * square > n)
 		return (-1);
-	else if (n * n == x)
-		return (n);
-	return (_sqrt(n + 1, x));
+	return (-1);
 }
